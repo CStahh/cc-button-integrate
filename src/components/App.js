@@ -134,7 +134,7 @@ function App() {
 			setIsMinting(true)
 			setIsError(false)
 
-			await gsTest.methods.mint(1).send({ from: account, value: 10000000000000000 })
+			await gsTest.methods.mint(1).send({ from: account, value: 1 })
 				.on('confirmation', async () => {
 					const maxSupply = await gsTest.methods.maxSupply().call()
 					const totalSupply = await gsTest.methods.totalSupply().call()

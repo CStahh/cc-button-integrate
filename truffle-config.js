@@ -23,10 +23,10 @@ module.exports = {
 			provider: function () {
 				return new HDWalletProvider(
 					[process.env.DEPLOYER_PRIVATE_KEY],
-					`https://polygon-rpc.com`
+					`https://rpc-mumbai.matic.today`
 				)
 			},
-			network_id: 137
+			network_id: 80001
 		}
 	},
 
