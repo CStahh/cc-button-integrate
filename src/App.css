@@ -20,29 +20,34 @@
 :root {
     --clr-primary: #11372d;
     --clr-secondary: #009900;
-    --clr-text-light: #fdb004;
+    --clr-primary: #170f3d;
+    --clr-secondary: #8718f0;
+    --clr-text-light: #fddc0d;
+    --clr-text-sub: #ffffff;
+    --clr-text-light: #0d89fe;
     --clr-text-dark: #000000;
     --clr-button-bg-1: #a3c2c2;
     --clr-button-bg-2: #f2f2f2;
     /*--clr-button-bg-3: #a3c2c2;*/
     --clr-button-bg-3: #FF7F50;
+    --clr-text-nav: #fddc0d;
+    --clr-text-alt: #F545D6;
+    --clr-text-alt2: #C7BFF2;
 }
 
-/*!!!!INSERT/ADJUST - adjust type of font for title*/
-/*notes - */
 html {
     font-family: "Rubik" !important;
     font-weight: 400;
+    max-width: 100vw;
 }
 
-/*!!!!INSERT/ADJUST - adjust look of background*/
-/*notes - */
 body {
     background: var(--clr-primary);
     background: linear-gradient(var(--clr-primary), var(--clr-secondary));
     color: var(--clr-text-light);
 
-    min-height: 100vh;
+    /*min-height: 100vh;*/
+    max-width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
 
@@ -55,27 +60,58 @@ body {
     align-items: center;
 }
 
+.flex2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 nav {
     height: 10vh;
 }
 
 main {
     width: 100%;
+    max-width: 100vw;
     margin-top: 10vh;
     scroll-snap-type: y mandatory;
 
     /* padding: 3em 1em; */
 }
 
+
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    max-width: 100vw;
+    /*max-height: 90vh;*/
+}
+
+/*.navcolor {
+    color: var(--clr-text-nav);
+}*/
+
+
 .welcome {
     min-height: 90vh;
+    min-width: 100vw;
     scroll-snap-align: start;
+    padding: 4vh;
 }
 
 .about {
+    /*margin-top: 10vh;*/
     padding-top: 10vh;
     background: var(--clr-primary);
     min-height: 100vh;
+    min-width: 100vw;
     scroll-snap-align: start;
 }
 
@@ -83,9 +119,12 @@ main {
 h1 {
     font-family: "Gochi Hand";
     font-weight: 700;
-    font-size: clamp(3rem, 10vw, 10rem);
+    /*font-size: xx-large;*/
+    font-size: clamp(3rem, 10vw, 7rem);
     /*transform: rotate(-4deg);*/
     padding-left: .8em;
+    text-align: center;
+    color: var(--clr-text-alt);
 }
 
 h2 {
@@ -102,15 +141,20 @@ h3 {
 .sub-header {
     font-family: "Gochi Hand";
     font-weight: 700;
-    font-size: clamp(2rem, 5vw, 4rem);
-    transform: rotate(0deg) translateX(2.5em) translateY(-0.5em);
-    padding-left: .8em;
+    font-size: clamp(0.5rem, 3vw, 2rem);
+    /*transform: rotate(0deg) translateX(2.5em) translateY(-0.5em);*/
+    /*padding-left: .8em;*/
+    text-align: center;
+    color: wheat;
+    color: var(--clr-text-sub);
 }
 
 .countdown {
     font-family: "Rubik";
     font-weight: 700;
     font-size: clamp(3rem, 5vw, 4rem);
+    display: none;
+
 }
 
 .text, ul {
@@ -122,7 +166,10 @@ h3 {
 /* LINK / BUTTON STYLES */
 a {
     display: block;
-    color: var(--clr-text-light);
+    display: flex;/**/
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-text-sub);
     font-weight: 700;
     text-decoration: none;
 
@@ -153,7 +200,8 @@ a:hover {
 
 .nav-button {
     margin: .5em 0;
-}
+    float: right;
+   }
 
 .mint-button {
     min-width: 150px;
@@ -175,7 +223,8 @@ a:hover {
 .App-logo {
     max-width: 30px;
     height: auto;
-    margin: 0 10px;
+    padding-bottom: 6px;
+    margin: 10px;
 }
 
 .showcase {
@@ -204,10 +253,14 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 
+#item-adjust {
+    padding-bottom: 14vh;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
     .showcase {
-        width: 300px;
+        width: 260px;
     }
 }
 

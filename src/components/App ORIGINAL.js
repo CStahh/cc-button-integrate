@@ -174,19 +174,42 @@ function App() {
 				<section id='welcome' className='welcome'>
 
 					<Row className='header my-3 p-3 mb-0 pb-0'>
-						<h1>SMART SHADES</h1>
-						<p className='sub-header'>The NFTs that can help you Get Smarter!</p>
+						<Col xs={12} md={12} lg={8} xxl={8}>
+							<h1>SMART SHADES</h1>
+							<p className='sub-header'>The NFTs that can help you Get Smarter!</p>
+						</Col>
+						<Col className='flex social-icons'>
+							<a
+								href="https://twitter.com/NeuroKeep1"
+								target='_blank'
+								className='circle flex button'>
+								<img src={twitter} alt="Twitter" />
+							</a>
+							<a
+								href="#"
+								target='_blank'
+								className='circle flex button'>
+								<img src={instagram} alt="Instagram" />
+							</a>
+							<a
+								href="https://testnets.opensea.io/collection/gs-test-1"
+								target='_blank'
+								className='circle flex button'>
+								<img src={opensea} alt="Opensea" />
+							</a>
+						</Col>
 					</Row>
 
 					<Row className='flex m-3'>
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
 							<img
+								//src={`https://gateway.pinata.cloud/ipfs/QmXojk54V9XWiQ8u2jEtE1jMfwjVXfSJ38qiebP3kHKoLr/${counter}.png`}
 								src={showcase}
 								alt="Get Smarter"
 								className='showcase'
 							/>
 						</Col>
-						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
+						<Col md={5} lg={4} xl={5} xxl={4}>
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown mx-3' />}
 							<p className='text'>
 								We're very excited to launch our first indy nft project....This is just a test website!
@@ -200,7 +223,7 @@ function App() {
 					<Row className='flex m-3'>
 						<h2 className='text-center p-3'>About the Collection</h2>
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
-							<img src={nftex} alt="Multiple Crypto Punks" className='showcase' />
+							<img src={nftex} alt="Smart Shade NFTs" className='showcase' />
 						</Col>
 						<Col md={5} lg={4} xl={5} xxl={4}>
 							{isError ? (
@@ -223,11 +246,10 @@ function App() {
 
 							   <CrossmintPayButton
 								   className='button mint-button mt-3'
-								   collectionTitle="Smart Shades"
-								   collectionDescription="A line of indy NFTs that might help you Get Smarter!"
+								   collectionTitle="Title"
+								   collectionDescription="Description"
 								   collectionPhoto="https://gateway.pinata.cloud/ipfs/QmQyPmkSuZUi1pU82pkj86vGzBeWeqnexvkeC61ofYFhux/1.png"
-								   environment="staging"
-								   clientId="f7eae5a6-d2cb-4e3c-b5e6-033f71e1782a"
+								   clientId="1"
 								   mintConfig={{
 									   price: "2.0",
 									   //onClick={mintNFTHandler}
