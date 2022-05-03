@@ -104,6 +104,8 @@ main {
     min-width: 100vw;
     scroll-snap-align: start;
     padding: 4vh;
+    padding-bottom: 16vh;
+    padding-top: 3vh;
 }
 
 .about {
@@ -124,7 +126,7 @@ h1 {
     /*transform: rotate(-4deg);*/
     padding-left: .8em;
     text-align: center;
-    color: var(--clr-text-alt);
+    color: var(--clr-text-light);
 }
 
 h2 {
@@ -132,6 +134,8 @@ h2 {
     font-weight: 700;
     font-size: clamp(2rem, 5vw, 5rem);
     padding-left: .8em;
+    color: var(--clr-text-alt);
+    text-decoration: underline;
 }
 
 h3 {
@@ -158,9 +162,10 @@ h3 {
 }
 
 .text, ul {
-    font-size: clamp(1rem, 2vw, 1.15rem);
+    font-size: clamp(0.96rem, 1.5vw, 1.15rem);
     font-weight: 300;
     padding: 1.15em;
+    text-align: left;
 }
 
 /* LINK / BUTTON STYLES */
@@ -260,7 +265,7 @@ a:hover {
 /* Media Queries */
 @media screen and (min-width: 768px) {
     .showcase {
-        width: 260px;
+        width: 290px;
     }
 }
 

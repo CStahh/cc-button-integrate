@@ -173,7 +173,7 @@ function App() {
 			<main>
 				<section id='welcome' className='welcome'>
 
-					<Row className='header my-3 p-3 mb-0 pb-0'>
+					<Row className='header my-0 p-2 mb-0 pb-0'>
 						<h1>SMART SHADES</h1>
 						<p className='sub-header'>The NFTs that can help you Get Smarter!</p>
 					</Row>
@@ -189,7 +189,7 @@ function App() {
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown mx-3' />}
 							<p className='text'>
-								We're very excited to launch our first indy nft project....This is just a test website!
+								Introducing Smart Shades NFTs, the NFTs that can help you get smarter!... Ok, they themselves wont help you get smarter, but if you buy one, you’ll get free access to a “Get Smarter” guide and training software that takes you step-by-step through the best way known to science to help boost your intelligence!
 							</p>
 							<a href="#about" className='button mx-3'>Learn More!</a>
 						</Col>
@@ -200,15 +200,13 @@ function App() {
 					<Row className='flex m-3'>
 						<h2 className='text-center p-3'>About the Collection</h2>
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
-							<img src={nftex} alt="Multiple Crypto Punks" className='showcase' />
+							<img src={nftex} alt="Multiple Smart" className='showcase' />
 						</Col>
-						<Col md={5} lg={4} xl={5} xxl={4}>
+						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
 							{isError ? (
 								<p>{message}</p>
 							) : (
 						<div>
-									<h3>Mint your NFT in</h3>
-									{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown' />}
 									<ul>
 										<li>500 generated SMART images using an art generator</li>
 										<li>Mint using a credit card or connect a crypto wallet</li>
