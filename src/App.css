@@ -73,7 +73,7 @@ nav {
 main {
     width: 100%;
     max-width: 100vw;
-    margin-top: 10vh;
+    margin-top: 6vh;
     scroll-snap-type: y mandatory;
 
     /* padding: 3em 1em; */
@@ -98,7 +98,6 @@ main {
     color: var(--clr-text-nav);
 }*/
 
-
 .welcome {
     min-height: 90vh;
     min-width: 100vw;
@@ -109,11 +108,12 @@ main {
 }
 
 .about {
-    /*margin-top: 10vh;*/
+    margin-top: 2vh;
     padding-top: 10vh;
     background: var(--clr-primary);
     min-height: 100vh;
-    min-width: 100vw;
+    max-width: 100vw;
+
     scroll-snap-align: start;
 }
 
@@ -132,15 +132,22 @@ h1 {
 h2 {
     font-family: "Gochi Hand";
     font-weight: 700;
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(2.2rem, 7vw, 5.5rem);
     padding-left: .8em;
+    margin-bottom: 8vh;
     color: var(--clr-text-alt);
     text-decoration: underline;
 }
 
 h3 {
     margin: 1em auto 0;
-}
+    font-family: "Gochi Hand";
+    font-weight: 300;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding-left: .8em;
+    margin-bottom: 8vh;
+    color: var(--clr-text-light);
+    }
 
 .sub-header {
     font-family: "Gochi Hand";
@@ -166,6 +173,10 @@ h3 {
     font-weight: 300;
     padding: 1.15em;
     text-align: left;
+}
+
+.li {
+    margin-left: 5vw;
 }
 
 /* LINK / BUTTON STYLES */
@@ -195,6 +206,8 @@ a:hover {
 
     border: none;
     border-radius: .5em;
+    border-radius: .6em;
+    border: 3px solid #0d89fe;
 
     text-transform: uppercase;
     text-decoration: none;
@@ -209,8 +222,12 @@ a:hover {
    }
 
 .mint-button {
-    min-width: 150px;
-    max-width: 225px;
+    width: 225px;
+    height: 50px;
+    min-width: 225px;
+    max-width: 300px;
+    min-height: 40px;
+    max-height: 50px;
     margin-bottom: 20px;
 
     overflow: hidden;
@@ -222,6 +239,84 @@ a:hover {
     0px 0px 15px var(--clr-button-bg-3),
     0px 0px 30px var(--clr-button-bg-3),
     0px 0px 100px var(--clr-button-bg-3);
+}
+
+.clearbox {
+  display: inline-block;
+  width: 54%;
+  padding: .75em .75em;
+  margin: .5em auto;
+
+  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.0);
+  border-radius: .6em;
+  border: 4px solid rgba(255, 255, 255, 1.0);
+  align-items: center;
+
+  text-decoration-color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+
+.clearbox:hover {
+    color: var(--clr-light);
+    /*box-shadow: 0px 0px 5px var(--clr-button-bg-3);*/
+    border-color: var(--clr-light);
+    /*0px 0px 15px var(--clr-button-bg-3),
+    0px 0px 30px var(--clr-button-bg-3),
+    0px 0px 100px var(--clr-button-bg-3);*/
+}
+
+button.my-custom-crossmint-button {
+    display: flex;
+    padding: .75em 1.5em;
+    margin: .5em auto;
+
+    /*background-color: blueviolet;*/
+    background-color: var(--clr-button-alt);
+    background-color: #f545d6;
+    /*min-width: 150px;
+    max-width: 225px;
+    margin-bottom: 20px;*/
+    width: 225px;
+    height: 50px;
+    min-width: 225px;
+    max-width: 300px;
+    min-height: 40px;
+    max-height: 50px;
+    overflow: hidden;
+
+    border: none;
+    border: 3px solid #0d89fe;
+    border-radius: .5em;
+
+    text-transform: uppercase;
+    color: #0d89fe;
+    color: var(--clr-light);
+    font-size: smaller;
+    font-weight: 700;
+
+    transition: all 500ms ease;
+
+    /*display: flex;
+    padding: .75em 1.5em;
+    margin: .5em auto;*/
+}
+
+.my-custom-crossmint-button:hover {
+    color: var(--clr-primary);
+    box-shadow: 0px 0px 5px var(--clr-button-bg-3),
+    0px 0px 15px var(--clr-button-bg-3),
+    0px 0px 30px var(--clr-button-bg-3),
+    0px 0px 100px var(--clr-button-bg-3);
+}
+
+.social {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 6vh;
 }
 
 /* IMAGE STYLES */
@@ -265,7 +360,7 @@ a:hover {
 /* Media Queries */
 @media screen and (min-width: 768px) {
     .showcase {
-        width: 290px;
+        width: 310px;
     }
 }
 
@@ -278,9 +373,15 @@ a:hover {
 @media screen and (min-width: 1400px) {
     .header {
         text-align: center;
+        max-width: 100vw;
     }
 
     .social-icons {
         justify-content: flex-start;
+        margin-top: 10vh;
     }
+}
+
+.row {
+    max-width: 100vw;
 }

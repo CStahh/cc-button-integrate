@@ -186,12 +186,12 @@ function App() {
 								className='showcase'
 							/>
 						</Col>
-						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
+						<Col md={6} lg={6} xl={6} xxl={6} className='text-center'>
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown mx-3' />}
 							<p className='text'>
 								Introducing Smart Shades NFTs, the NFTs that can help you get smarter!... Ok, they themselves wont help you get smarter, but if you buy one, you’ll get free access to a “Get Smarter” guide and training software that takes you step-by-step through the best way known to science to help boost your intelligence!
 							</p>
-							<a href="#about" className='button mx-3'>Learn More!</a>
+							<a href="#about" className='clearbox mx-3'>Learn More!</a>
 						</Col>
 					</Row>
 				</section>
@@ -202,12 +202,13 @@ function App() {
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
 							<img src={nftex} alt="Multiple Smart" className='showcase' />
 						</Col>
-						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
+						<Col md={6} lg={6} xl={6} xxl={6} className='text-center'>
 							{isError ? (
 								<p>{message}</p>
 							) : (
 						<div>
-									<ul>
+							<h3 className='h3' p-2>Get Your Brain Training NFTs!</h3>
+									<ul className="li">
 										<li>500 generated SMART images using an art generator</li>
 										<li>Mint using a credit card or connect a crypto wallet</li>
 										<li>Viewable on Opensea shortly after minting</li>
@@ -220,12 +221,12 @@ function App() {
 							   <button onClick={mintNFTHandler} className='button mint-button mt-3'>Mint</button>
 
 							   <CrossmintPayButton
-								   className='button mint-button mt-3'
 								   collectionTitle="Smart Shades"
 								   collectionDescription="A line of indy NFTs that might help you Get Smarter!"
 								   collectionPhoto="https://gateway.pinata.cloud/ipfs/QmQyPmkSuZUi1pU82pkj86vGzBeWeqnexvkeC61ofYFhux/1.png"
 								   environment="staging"
 								   clientId="f7eae5a6-d2cb-4e3c-b5e6-033f71e1782a"
+								   className='my-custom-crossmint-button'
 								   mintConfig={{
 									   price: "2.0",
 									   //onClick={mintNFTHandler}
@@ -246,6 +247,32 @@ function App() {
 										</small></p>}
 						</div>
 							)}
+						</Col>
+					</Row>
+
+					<Row className='header my-3 p-3 mb-0 pb-0'>
+						<Col xs={12} md={12} lg={8} xxl={8} className='social'>
+							<h className='h3'>Links</h>
+						</Col>
+						<Col className='flex social'>
+							<a
+								href="https://twitter.com/NeuroKeep1"
+								target='_blank'
+								className='circle flex button'>
+								<img src={twitter} alt="Twitter" />
+							</a>
+							<a
+								href="#"
+								target='_blank'
+								className='circle flex button'>
+								<img src={instagram} alt="Instagram" />
+							</a>
+							<a
+								href="https://testnets.opensea.io/collection/gs-test-1"
+								target='_blank'
+								className='circle flex button'>
+								<img src={opensea} alt="Opensea" />
+							</a>
 						</Col>
 					</Row>
 
