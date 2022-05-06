@@ -178,7 +178,7 @@ function App() {
 						<p className='sub-header'>The NFTs that can help you Get Smarter!</p>
 					</Row>
 
-					<Row className='flex m-3'>
+					<Row className='flex m-1'>
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
 							<img
 								src={showcase}
@@ -197,7 +197,7 @@ function App() {
 				</section>
 
 				<section id='about' className='about'>
-					<Row className='flex m-3'>
+					<Row className='flex m-3 divborder' style={{ paddingBottom: '6vh' }}>
 						<h2 className='text-center p-3'>About the Collection</h2>
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
 							<img src={nftex} alt="Multiple Smart" className='showcase' />
@@ -207,11 +207,11 @@ function App() {
 								<p>{message}</p>
 							) : (
 						<div>
-							<h3 className='h3' p-2>Get Your Brain Training NFTs!</h3>
+							<h3 className='h3' p-2>The collection has...</h3>
 									<ul className="li">
-										<li>500 generated SMART images using an art generator</li>
-										<li>Mint using a credit card or connect a crypto wallet</li>
-										<li>Viewable on Opensea shortly after minting</li>
+										<li>1000 SMART SHADES NFT images generated using an art generator and launched on the Polygon network</li>
+										<li>Purchasing one gives you free access to a unique and effective brain training guide and software package</li>
+										<li>You can mint the "traditional" way by connectiong your crypto wallet, or you can buy one by simply using your credit card</li>
 									</ul>
 
 									{isMinting ? (
@@ -245,13 +245,23 @@ function App() {
 												OpenSea
 											</a>
 										</small></p>}
-						</div>
-							)}
+							</div>
+								)}
 						</Col>
 					</Row>
 
-					<Row className='header my-3 p-3 mb-0 pb-0'>
-						<Col xs={12} md={12} lg={8} xxl={8} className='social'>
+					<Row className='flex m-3 my-3 p-8 mb-0 pb-0'>
+					<Col md={10} lg={10} xl={10} xxl={10} className='text-center' style={{ paddingTop: '11vh' }}>
+							<p className='h3'>
+								So you're thinking of buying a brain training based NFT, eh? Yep, you sound smart! But by buying this NFT you might be able to get even smarter! Click the button and checkout how (contains free link for NFT holders)
+							</p>
+							<a href="https://www.neurokeep.com/getsmarterdescription" className='clearbox2 mx-3'>GET SMARTER!</a>
+					</Col>
+					</Row>
+					
+
+					<Row className='header m-3 my-3 p-3 mb-0 pb-0'>
+						<Col xs={12} md={12} lg={12} xxl={12} className='social' style={{ paddingTop: '8vh'}}>
 							<h className='h3'>Links</h>
 						</Col>
 						<Col className='flex social'>
@@ -276,7 +286,7 @@ function App() {
 						</Col>
 					</Row>
 
-					<Row style={{ marginTop: "100px" }}>
+					<Row className='m-3' style={{ marginTop: "16vh", marginBottom: "0vh", paddingBottom: "4vh" }}>
 						<Col>
 							{gsTest &&
 								<a

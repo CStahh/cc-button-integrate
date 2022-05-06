@@ -5,7 +5,7 @@ const Navbar = ({ web3Handler, account, explorerURL }) => {
         <nav className="navbar fixed-top mx-0 my-2">
             <a
                 className="navbar-brand col-sm-3 col-md-2 mr-0 mx-0"
-                href="http://www.neurokeep.com/products"
+                href="https://www.neurokeep.com/getsmarterdescription"
                 target="_blank"
                 rel="noopener noreferrer"
             >

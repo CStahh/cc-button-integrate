@@ -1,0 +1,22 @@
+
+
+<Row className='flex m-3'>
+						<Col md={6} lg={6} xl={6} xxl={6} className='text-center'>
+							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown mx-3' />}
+							<h3 className='text'>
+								For a full, thorough description of what our brain training can do, click the button to see how you can boost your brain!
+							</h3>
+							<a href="#about" className='clearbox mx-3'>Get Smarter</a>
+						</Col>
+					</Row>
+
+
+<Row className='flex m-3'>
+					<Col md={6} lg={6} xl={6} xxl={6} className='text-center'>
+							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown mx-3' />}
+							<p className='text'>
+								Introducing Smart Shades NFTs, the NFTs that can help you get smarter!... Ok, they themselves wont help you get smarter, but if you buy one, you’ll get free access to a “Get Smarter” guide and training software that takes you step-by-step through the best way known to science to help boost your intelligence!
+							</p>
+							<a href="#about" className='clearbox mx-3'>Learn More!</a>
+					</Col>
+					</Row>
