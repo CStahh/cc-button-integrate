@@ -105,7 +105,7 @@ main {
     min-height: 90vh;
     max-width: 100vw;
     scroll-snap-align: start;
-    padding: 4vh;
+    padding: 2vh;
     padding-bottom: 9vh;
     padding-top: 3vh;
 }
@@ -181,10 +181,13 @@ h3 {
 }
 
 .text, ul {
-    font-size: clamp(1.1rem, 1.5vw, 1.15rem);
+    font-size: clamp(1.2rem, 1.5vw, 1.25rem);
     font-weight: 300;
-    padding: 0.5em;
+    padding: 0.1em;
     text-align: left;
+
+    line-height: 1.8;
+    letter-spacing: 0.06em;
 }
 
 .li {
@@ -209,9 +212,10 @@ a:hover {
 }
 
 .button {
-    display: inline-block;
+    display: inline-flex;
     padding: .75em 1.5em;
     margin: .5em auto;
+    justify-content: center;
 
     background: linear-gradient(to left, var(--clr-button-bg-1), var(--clr-button-bg-2));
     color: var(--clr-text-dark);
@@ -328,6 +332,12 @@ button.my-custom-crossmint-button {
     font-size: 1em;
     margin-top: 4vh;
     justify-content: center;
+
+    font-weight: 300;
+    padding: 0.1em;
+    
+    line-height: 1.8;
+    letter-spacing: 0.06em;
 }
 
 .project-row {

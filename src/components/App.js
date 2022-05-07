@@ -251,8 +251,8 @@ function App() {
 					</Row>
 
 					<Row className='flex m-3 my-3 p-8 mb-0 pb-0'>
-					<Col md={10} lg={10} xl={10} xxl={10} className='text-center' style={{ paddingTop: '11vh' }}>
-							<p className='h3'>
+					<Col md={11} lg={11} xl={11} xxl={11} className='text-center' style={{ paddingTop: '11vh' }}>
+							<p className='text'>
 								So you're thinking of buying a brain training based NFT, eh? Yep, you sound smart! But by buying this NFT you might be able to get even smarter! Click the button and checkout how (contains free link for NFT holders)
 							</p>
 							<a href="https://www.neurokeep.com/getsmarterdescription" className='clearbox2 mx-3'>GET SMARTER!</a>
