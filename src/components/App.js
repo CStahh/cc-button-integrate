@@ -286,7 +286,7 @@ function App() {
 						</Col>
 					</Row>
 
-					<Row className='m-3' style={{ marginTop: "16vh", marginBottom: "0vh", paddingBottom: "4vh" }}>
+					<Row className='m-3' style={{ marginTop: "16vh", marginBottom: "4vh", paddingBottom: "4vh" }}>
 						<Col>
 							{gsTest &&
 								<a

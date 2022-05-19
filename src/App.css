@@ -183,7 +183,7 @@ h3 {
 .text, ul {
     font-size: clamp(1.2rem, 1.5vw, 1.25rem);
     font-weight: 300;
-    padding: 0.1em;
+    padding: 0.3em;
     text-align: left;
 
     line-height: 1.8;
