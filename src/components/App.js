@@ -209,9 +209,10 @@ function App() {
 						<div>
 							<h3 className='h3' p-2>The collection has...</h3>
 									<ul className="li">
-										<li>1000 SMART SHADES NFT images generated using an art generator and launched on the Polygon network</li>
-										<li>Purchasing one gives you free access to a unique and effective brain training guide and software package</li>
+										<li>Purchasing one gives you FREE access to our unique, scientific brain training guide and software package</li>
+										<li>You'll also get exclusive and FREE access to software upgrades and new brain training games when they're released</li>
 										<li>You can mint the "traditional" way by connectiong your crypto wallet, or you can buy one by simply using your credit card</li>
+										<li>The best value of any NFT you'll find! Boost your brain with our SMART SHADES Brain Training and you're surely GM!</li>
 									</ul>
 
 									{isMinting ? (
@@ -222,7 +223,7 @@ function App() {
 
 							   <CrossmintPayButton
 								   collectionTitle="Smart Shades"
-								   collectionDescription="A line of indy NFTs that might help you Get Smarter!"
+								   collectionDescription="A line of NFTs that actually help you get smarter - pick one up and you're definitely GM!"
 								   collectionPhoto="https://gateway.pinata.cloud/ipfs/QmQyPmkSuZUi1pU82pkj86vGzBeWeqnexvkeC61ofYFhux/1.png"
 								   environment="staging"
 								   clientId="f7eae5a6-d2cb-4e3c-b5e6-033f71e1782a"
@@ -237,12 +238,12 @@ function App() {
 									)}
 
 									{ownerOf.length > 0 &&
-										<p><small>View your NFT on
+										<p><small>
 											<a
 												href={`${openseaURL}/assets/${gsTest._address}/${ownerOf[0]}`}
 												target='_blank'
 												style={{ display: 'inline-block', marginLeft: '3px' }}>
-												OpenSea
+												Claim your FREE SMART SHADES Brain Training package
 											</a>
 										</small></p>}
 							</div>
