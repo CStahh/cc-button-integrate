@@ -189,7 +189,7 @@ function App() {
 						<Col md={6} lg={6} xl={6} xxl={6} className='text-center'>
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown mx-3' />}
 							<p className='text'>
-								Introducing Smart Shades NFTs, the NFTs that can help you get smarter!... Ok, they themselves wont help you get smarter, but if you buy one, you’ll get free access to a “Get Smarter” guide and training software that takes you step-by-step through the best way known to science to help boost your intelligence!
+								Introducing Smart Shades NFTs, the NFTs that can actually help you get smarter!... Ok, they themselves wont help you get smarter, but if you buy one, you’ll get free access to a “Get Smarter” guide and training software that takes you step-by-step through the best way known to science to help boost your intelligence!
 							</p>
 							<a href="#about" className='clearbox mx-3'>Learn More!</a>
 						</Col>
@@ -207,7 +207,7 @@ function App() {
 								<p>{message}</p>
 							) : (
 						<div>
-							<h3 className='h3' p-2>The collection has...</h3>
+							<h3 className='h3' p-2>Mint a Smart Shades NFT because...</h3>
 									<ul className="li">
 										<li>Purchasing one gives you FREE access to our unique, scientific brain training guide and software package</li>
 										<li>You'll also get exclusive and FREE access to software upgrades and new brain training games when they're released</li>
@@ -254,9 +254,18 @@ function App() {
 					<Row className='flex m-3 my-3 p-8 mb-0 pb-0'>
 					<Col md={11} lg={11} xl={11} xxl={11} className='text-center' style={{ paddingTop: '11vh' }}>
 							<p className='text'>
-								So you're thinking of buying a brain training based NFT, eh? Yep, you sound smart! But by buying this NFT you might be able to get even smarter! Click the button and checkout how (contains free link for NFT holders)
+								So you've bought a Smart Shades NFT, eh? Yep, you sound smart! Now claim your Smart Shades Brain Training package for FREE and get even smarter! Click the button below and enter in the password shown on the bottom of your NFT and download your key to brilliance!
 							</p>
-							<a href="https://www.neurokeep.com/getsmarterdescription" className='clearbox2 mx-3'>GET SMARTER!</a>
+							<a href="https://www.neurokeep.com/smart-shades-for-nft-holders" className='clearbox2 mx-3'>Get Your Smart Shades Brain Training for FREE!</a>
+					</Col>
+					</Row>
+
+					<Row className='flex m-3 my-3 p-8 mb-0 pb-0'>
+					<Col md={11} lg={11} xl={11} xxl={11} className='text-center' style={{ paddingTop: '11vh' }}>
+							<p className='text'>
+								To Learn more about our Smart Shades Brain Training click below
+							</p>
+							<a href="https://www.neurokeep.com/smart-shades-brain-training" className='clearbox2 mx-3'>Learn More About Smart Shades!</a>
 					</Col>
 					</Row>
 					
