@@ -5,7 +5,8 @@ import Web3 from 'web3'
 
 // Import Images + CSS
 import twitter from '../images/socials/twitter.svg'
-import instagram from '../images/socials/instagram.svg'
+//import instagram from '../images/socials/instagram.svg'
+import website from '../images/socials/website.icon.png'
 import opensea from '../images/socials/opensea.svg'
 import showcase from '../images/showcase.png'
 import nftex from '../images/nftex.png'
@@ -175,7 +176,7 @@ function App() {
 
 					<Row className='header my-0 p-2 mb-0 pb-0'>
 						<h1>SMART SHADES</h1>
-						<p className='sub-header'>The NFTs that can help you Get Smarter!</p>
+						<p className='sub-header'>The NFTs that can help you get smarter!</p>
 					</Row>
 
 					<Row className='flex m-1'>
@@ -189,7 +190,7 @@ function App() {
 						<Col md={6} lg={6} xl={6} xxl={6} className='text-center'>
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown mx-3' />}
 							<p className='text'>
-								Introducing Smart Shades NFTs, the NFTs that can actually help you get smarter!... Ok, they themselves wont help you get smarter, but if you buy one, you’ll get free access to a “Get Smarter” guide and training software that takes you step-by-step through the best way known to science to help boost your intelligence!
+								Introducing Smart Shades NFTs, the NFTs that can actually help you get smarter!... Ok, they themselves wont actually increase your intelligence, but if you buy one, you’ll get FREE access to our Smart Shades Brain Training: The simplest, most scientific and... coolest way to help you get smarter!
 							</p>
 							<a href="#about" className='clearbox mx-3'>Learn More!</a>
 						</Col>
@@ -210,8 +211,8 @@ function App() {
 							<h3 className='h3' p-2>Mint a Smart Shades NFT because...</h3>
 									<ul className="li">
 										<li>Purchasing one gives you FREE access to our unique, scientific brain training guide and software package</li>
-										<li>You'll also get exclusive and FREE access to software upgrades and new brain training games when they're released</li>
-										<li>You can mint the "traditional" way by connectiong your crypto wallet, or you can buy one by simply using your credit card</li>
+										<li>As and NFT holder you'll also get exclusive and FREE access to software upgrades and new brain training games when they're released</li>
+										<li>You can mint the "traditional" way by connecting your crypto wallet, or you can buy one by simply using your credit card</li>
 										<li>The best value of any NFT you'll find! Boost your brain with our SMART SHADES Brain Training and you're surely GM!</li>
 									</ul>
 
@@ -254,7 +255,7 @@ function App() {
 					<Row className='flex m-3 my-3 p-8 mb-0 pb-0'>
 					<Col md={11} lg={11} xl={11} xxl={11} className='text-center' style={{ paddingTop: '11vh' }}>
 							<p className='text'>
-								So you've bought a Smart Shades NFT, eh? Yep, you sound smart! Now claim your Smart Shades Brain Training package for FREE and get even smarter! Click the button below and enter in the password shown on the bottom of your NFT and download your key to brilliance!
+								So you've bought a Smart Shades NFT, eh? Yep, you sound smart! Now you can claim your Smart Shades Brain Training package for FREE and start getting even smarter! Click the button below and enter in the password shown on the bottom of your NFT to download the simplest, most scientific and... coolest way to help you get smarter!
 							</p>
 							<a href="https://www.neurokeep.com/smart-shades-for-nft-holders" className='clearbox2 mx-3'>Get Your Smart Shades Brain Training for FREE!</a>
 					</Col>
@@ -282,17 +283,17 @@ function App() {
 								<img src={twitter} alt="Twitter" />
 							</a>
 							<a
-								href="#"
+								href="https://www.neurokeep.com/"
 								target='_blank'
 								className='circle flex button'>
-								<img src={instagram} alt="Instagram" />
+								<img src={website} alt="Website" />
 							</a>
 							<a
 								href="https://testnets.opensea.io/collection/gs-test-1"
 								target='_blank'
 								className='circle flex button'>
 								<img src={opensea} alt="Opensea" />
-							</a>
+							</a> 
 						</Col>
 					</Row>
 
@@ -303,7 +304,7 @@ function App() {
 									href={`${explorerURL}/address/${gsTest._address}`}
 									target='_blank'
 									className='text-center'>
-									{gsTest._address}
+									Contract: {gsTest._address}
 								</a>
 							}
 						</Col>
