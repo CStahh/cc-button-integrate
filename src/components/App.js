@@ -253,7 +253,7 @@ function App() {
 					</Row>
 
 					<Row className='flex m-3 my-3 p-8 mb-0 pb-0'>
-					<Col md={11} lg={11} xl={11} xxl={11} className='text-center' style={{ paddingTop: '11vh' }}>
+					<Col md={11} lg={11} xl={11} xxl={11} className='text-center' style={{ paddingTop: '8vh' }}>
 							<p className='text'>
 								So you've bought a Smart Shades NFT, eh? Yep, you sound smart! Now you can claim your Smart Shades Brain Training package for FREE and start getting even smarter! Click the button below and enter in the password shown on the bottom of your NFT to download the simplest, most scientific and... coolest way to help you get smarter!
 							</p>
@@ -262,8 +262,8 @@ function App() {
 					</Row>
 
 					<Row className='flex m-3 my-3 p-8 mb-0 pb-0'>
-					<Col md={11} lg={11} xl={11} xxl={11} className='text-center' style={{ paddingTop: '11vh' }}>
-							<p className='text'>
+					<Col md={11} lg={11} xl={11} xxl={11} className='text-center' style={{ paddingTop: '9vh' }}>
+							<p className='text2'>
 								To Learn more about our Smart Shades Brain Training click below
 							</p>
 							<a href="https://www.neurokeep.com/smart-shades-brain-training" className='clearbox2 mx-3'>Learn More About Smart Shades!</a>

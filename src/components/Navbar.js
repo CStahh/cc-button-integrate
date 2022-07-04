@@ -22,7 +22,7 @@ const Navbar = ({ web3Handler, account, explorerURL }) => {
                     {account.slice(0, 5) + '...' + account.slice(38, 42)}
                 </a>
             ) : (
-                <button onClick={web3Handler} className="button nav-button btn-sm mx-4">Connect Wallet</button>
+                <button onClick={web3Handler} className="button nav-button btn-sm mx-2">Connect Wallet</button>
             )}
         </nav>
     )

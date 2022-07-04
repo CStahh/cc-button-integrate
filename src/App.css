@@ -190,6 +190,16 @@ h3 {
     letter-spacing: 0.06em;
 }
 
+.text2 {
+    font-size: clamp(1.2rem, 1.5vw, 1.25rem);
+    font-weight: 300;
+    padding: 0.3em;
+    text-align: center;
+
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+}
+
 .li {
     margin-left: 5vw;
 }
@@ -233,7 +243,7 @@ a:hover {
 }
 
 .nav-button {
-    margin: .5em 0;
+    margin: .2em 0;
     float: right;
    }
 
@@ -255,7 +265,7 @@ a:hover {
 
 .clearbox, .clearbox2 {
   display: inline-block;
-  width: 54%;
+  /*width: 54%;*/
   padding: .75em .75em;
   margin: .5em auto;
 
