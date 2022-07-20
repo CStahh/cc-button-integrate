@@ -225,7 +225,7 @@ function App() {
 							   <CrossmintPayButton
 								   collectionTitle="Smart Shades"
 								   collectionDescription="A line of NFTs that actually help you get smarter - pick one up and you're definitely GM!"
-								   collectionPhoto="https://gateway.pinata.cloud/ipfs/QmQyPmkSuZUi1pU82pkj86vGzBeWeqnexvkeC61ofYFhux/1.png"
+								   collectionPhoto="https://gateway.pinata.cloud/ipfs/QmUC1QLaUnwXovCb2j5kMVDtzjx8ievB4YErxeuJ1dTMTr/42.png"
 								   environment="staging"
 								   clientId="f7eae5a6-d2cb-4e3c-b5e6-033f71e1782a"
 								   className='my-custom-crossmint-button'
